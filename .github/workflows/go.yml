@@ -1,4 +1,4 @@
-name: Go
+name: Read environment variable in Github Secrets from your program
 
 on:
     push:
