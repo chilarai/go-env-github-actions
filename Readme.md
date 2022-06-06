@@ -1,6 +1,6 @@
 # Readme
 
-At times while CI/CD with Github Actions, you need to read environment variables stored in `Github Secrets`. This sample program demonstrates how you can access `Github Secrets` stored in Github while doing CI/CD.
+At times while doing CI/CD with Github Actions, you need to read environment variables stored in `Github Secrets`. This sample program demonstrates how you can access `Github Secrets` stored in Github while doing CI/CD.
 
 ## Steps
 
@@ -22,6 +22,7 @@ At times while CI/CD with Github Actions, you need to read environment variables
 env:
     T1: ${{secrets.T1}}
 ```
+Value from `secrets.T1` is being assigned to Runner environment variable `T1`
 
 Here is my [Github Actions workflow](https://github.com/chilarai/go-env-github-actions/blob/master/.github/workflows/go.yml)
 
