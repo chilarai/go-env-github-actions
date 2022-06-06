@@ -21,6 +21,8 @@ func main(){
 	env1, err1 := os.LookupEnv("TEST1")
 	log.Println(env1, err1)
 
+	fmt.Println(os.Environ())
+
 	if !err1 {
 		fmt.Println("Could not read TEST1 from env")
 	} else {
