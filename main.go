@@ -18,7 +18,7 @@ func init() {
 func main(){
 	fmt.Println("Go env github actions")
 
-	env1, err1 := os.LookupEnv("TEST1")
+	env1, err1 := os.LookupEnv("T1")
 	log.Println(env1, err1)
 
 	fmt.Println(os.Environ())
