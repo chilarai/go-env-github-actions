@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"os"
 	"testing"
 )
@@ -8,6 +9,6 @@ import (
 func TestMain(t *testing.T){
 	main()
 
-	os.Setenv("ENV_VAR", "value")
-    defer os.Unsetenv("ENV_VAR")
+	env1, err1 := os.LookupEnv("T1")
+	log.Println(env1, err1)
 }
