@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-	"os"
 
 	"github.com/joho/godotenv"
 )
@@ -18,14 +17,4 @@ func init() {
 func main(){
 	fmt.Println("Go env github actions")
 
-	env1, err1 := os.LookupEnv("T1")
-	log.Println(env1, err1)
-
-	fmt.Println(os.Environ())
-
-	if !err1 {
-		fmt.Println("Could not read TEST1 from env")
-	} else {
-		fmt.Println("Value of Test1", env1)
-	}
 }
