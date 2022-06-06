@@ -7,8 +7,6 @@ on:
         branches: ["master"]
 
 jobs:
-    env:
-        T1: ${{secrets.T1}}
     build:
         runs-on: ubuntu-latest
         steps:
@@ -23,4 +21,5 @@ jobs:
               run: go build -v ./...
 
             - name: Test
+              env: T1: ${{secrets.T1}}
               run: go test -v ./...
